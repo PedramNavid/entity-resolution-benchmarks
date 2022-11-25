@@ -16,8 +16,13 @@ Benchmark 1: ./target/release/entity-rust
 
 ## Python
 
-Running with ngrams=10 takes over 40 seconds. 649839 matches found.
-hyperfine --runs 3 'python ./entity-py/entity.py'
+Running with ngrams=10 takes over 43 seconds. 649839 matches found.
 
+```
+hyperfine --runs 3 'python ./entity-py/entity.py'
+  Time (mean ± σ):     44.442 s ±  0.386 s    [User: 45.508 s, System: 0.498 s]
+  Range (min … max):   43.998 s … 44.700 s    3 runs
+
+```
 
 
